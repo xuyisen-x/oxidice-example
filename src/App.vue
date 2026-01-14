@@ -8,8 +8,15 @@ import DiceValueDisplay from './components/DiceValueDisplay.vue'
 
 const { showedValue, setResults, getResult, clear } = useDiceResultStore()
 const { initDiceBox, parseAndRoll, checkNotationValidAndFold } = useDiceBox()
+
+const isReady = ref(false)
 onMounted(async () => {
-  await initDiceBox('#dice-box-container')
+  try {
+    await initDiceBox('#dice-box-container')
+    isReady.value = true
+  } catch (error) {
+    alert('Dice box initialization failed' + error)
+  }
 })
 
 const notation = ref('[4d6kh3] ** 6')
@@ -69,6 +76,11 @@ const getResultString = (value: ValueSummary): string => {
 </script>
 
 <template>
+  <div v-if="!isReady" class="loading-overlay">
+    <div class="loading-content">
+      <p>Initializing...</p>
+    </div>
+  </div>
   <div class="app-layout">
     <aside class="sidebar">
       <div class="control-section">
@@ -381,5 +393,26 @@ html {
   opacity: 0.1;
   pointer-events: none;
   user-select: none;
+}
+
+.loading-overlay {
+  position: absolute; /* 或者 fixed，视你的布局需求而定 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dnd-parchment-bg); /* 使用羊皮纸背景 */
+  z-index: 10000; /* 确保在最上层 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-content {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--dnd-ink-secondary);
 }
 </style>
