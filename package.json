@@ -16,7 +16,8 @@
     "lint": "eslint . --fix --cache",
     "format": "prettier --write --experimental-cli src/",
     "predev": "npm run build:wasm",
-    "prebuild": "npm run build:wasm"
+    "prebuild": "npm run build:wasm",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@3d-dice/dice-box": "^1.1.4",
@@ -31,6 +32,7 @@
     "@vue/tsconfig": "^0.8.1",
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "~10.6.2",
+    "gh-pages": "^6.3.0",
     "jiti": "^2.6.1",
     "npm-run-all2": "^8.0.4",
     "prettier": "3.7.4",
