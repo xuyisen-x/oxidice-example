@@ -1,0 +1,3 @@
+[submodule "src/wasm/oxidice"]
+	path = src/wasm/oxidice
+	url = git@github.com:xuyisen-x/oxidice.git
