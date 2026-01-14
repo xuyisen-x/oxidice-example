@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/world.onscreen-BKFjhqUy.js","assets/Dice-Bfg_CV1E.js","assets/index-Be0N5Dxb.js","assets/index-DfJmNBUy.css","assets/world.none-isKdPT5i.js"])))=>i.map(i=>d[i]);
-import { _ as g, __tla as __tla_0 } from "./index-Be0N5Dxb.js";
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/world.onscreen-DPn9LHvd.js","assets/Dice-CSacXc9Q.js","assets/index-BPwGRYhP.js","assets/index-DfJmNBUy.css","assets/world.none-BxtHAX4H.js"])))=>i.map(i=>d[i]);
+import { _ as g, __tla as __tla_0 } from "./index-BPwGRYhP.js";
 let yl, vl;
 let __tla = Promise.all([
   (() => {
@@ -368,7 +368,7 @@ let __tla = Promise.all([
       }));
     } else {
       this.config.offscreen && (console.warn("This browser does not support OffscreenCanvas. Using standard canvas fallback."), this.config.offscreen = false);
-      const l = await g(() => import("./world.onscreen-BKFjhqUy.js").then(async (m) => {
+      const l = await g(() => import("./world.onscreen-DPn9LHvd.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([0,1,2,3])).then((b) => b.default);
@@ -380,7 +380,7 @@ let __tla = Promise.all([
     }
     else {
       console.warn("This browser does not support WebGL which is required for 3D rendering. Falling back to random number generator");
-      const l = await g(() => import("./world.none-isKdPT5i.js").then(async (m) => {
+      const l = await g(() => import("./world.none-BxtHAX4H.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([4,1,2,3])).then((b) => b.default);
