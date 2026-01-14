@@ -17,7 +17,7 @@
     "format": "prettier --write --experimental-cli src/",
     "predev": "npm run build:wasm",
     "prebuild": "npm run build:wasm",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build:wasm && vite build --base=/oxidice-example/ && gh-pages -d dist"
   },
   "dependencies": {
     "@3d-dice/dice-box": "^1.1.4",

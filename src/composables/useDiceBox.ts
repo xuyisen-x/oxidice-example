@@ -42,6 +42,7 @@ export function useDiceBox() {
       assetPath: '/assets/',
       scale: 5,
       theme: 'default',
+      origin: window.location.origin + import.meta.env.BASE_URL,
     })
 
     try {
