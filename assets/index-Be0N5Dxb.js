@@ -2861,7 +2861,7 @@ let __tla = (async () => {
   let tc, nc, dr, rc, oc;
   tc = "modulepreload";
   nc = function(e) {
-    return "/" + e;
+    return "/oxidice-example/" + e;
   };
   dr = {};
   sc = function(t, n, s) {
@@ -2900,7 +2900,7 @@ let __tla = (async () => {
       return t().catch(o);
     });
   };
-  rc = "/assets/oxidice_bg-8xwrXRmp.wasm";
+  rc = "/oxidice-example/assets/oxidice_bg-8xwrXRmp.wasm";
   oc = async (e = {}, t) => {
     let n;
     if (t.startsWith("data:")) {
@@ -3351,7 +3351,7 @@ ${e.stack}` : s;
       if (Ot || Kn) return;
       Kn = true;
       const { default: d } = await sc(async () => {
-        const { default: u } = await import("./dice-box.es-DxJcGGxK.js").then(async (m) => {
+        const { default: u } = await import("./dice-box.es-CwE0p3fS.js").then(async (m) => {
           await m.__tla;
           return m;
         });
