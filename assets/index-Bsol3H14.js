@@ -2900,7 +2900,7 @@ let __tla = (async () => {
       return t().catch(o);
     });
   };
-  rc = "/oxidice-example/assets/oxidice_bg-Db7pHxVN.wasm";
+  rc = "/oxidice-example/assets/oxidice_bg-Bzt5Uewm.wasm";
   oc = async (e = {}, t) => {
     let n;
     if (t.startsWith("data:")) {
@@ -3295,8 +3295,8 @@ ${e.stack}` : s;
       __wbg___wbindgen_debug_string_adfb662ae34724b6: gc,
       __wbindgen_init_externref_table: Zc,
       __wbindgen_cast_2241b6af4c4b2941: Jc,
-      __wbindgen_cast_4625c577ab2ec9ee: Yc,
-      __wbindgen_cast_d6cd19b81560fd6e: Xc
+      __wbindgen_cast_d6cd19b81560fd6e: Xc,
+      __wbindgen_cast_4625c577ab2ec9ee: Yc
     }
   }, rc), Qc = te.memory, ef = te.__wbg_dicerollerwithdicebox_free, tf = te.checkConstantInteger, nf = te.checkNumber, sf = te.dicerollerwithdicebox_evaluation, rf = te.dicerollerwithdicebox_getRequests, of = te.dicerollerwithdicebox_new, lf = te.dicerollerwithdicebox_removeRequests, cf = te.dicerollerwithdicebox_setResponses, ff = te.dicerollerwithdicebox_tryGetResults, uf = te.rollWithoutAnimation, af = te.tryFoldDiceExpression, df = te.__wbindgen_malloc, _f = te.__wbindgen_realloc, hf = te.__wbindgen_exn_store, pf = te.__externref_table_alloc, gf = te.__wbindgen_externrefs, bf = te.__externref_table_dealloc, mf = te.__externref_drop_slice, yf = te.__wbindgen_free, Co = te.__wbindgen_start, wf = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -3351,7 +3351,7 @@ ${e.stack}` : s;
       if (Ot || Kn) return;
       Kn = true;
       const { default: d } = await sc(async () => {
-        const { default: u } = await import("./dice-box.es-CaEANlFE.js").then(async (m) => {
+        const { default: u } = await import("./dice-box.es-Bx0hW12h.js").then(async (m) => {
           await m.__tla;
           return m;
         });
@@ -3364,7 +3364,8 @@ ${e.stack}` : s;
         id: "dice-canvas",
         assetPath: "/assets/",
         scale: 5,
-        theme: "default"
+        theme: "default",
+        origin: window.location.origin + "/oxidice-example/"
       });
       try {
         await Ot.init(), pr = true;
